@@ -1,0 +1,159 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ .dc_chat_popup__text {
+    position: fixed;
+    right: 85px;
+    bottom: 35px;
+    border-radius: 5px;
+    padding: 2px 10px;
+    z-index: 999;
+ }
+
+ .dc_chat_popup__text:hover,
+ .dc_chat_popup__button:hover {
+    cursor: pointer;
+ }
+
+ .dc_chat_popup__button,
+ .dc_chat__title{
+    display: flex;
+ }
+
+ .dc_chat_popup{
+   display: none;
+    position: fixed;
+    right: 25px;
+    bottom: 100px;
+    max-width: 350px;
+    z-index: 999;
+    box-shadow: 0px 10px 25px #888888;
+    border-radius: 10px;
+ }
+
+ .dc_chat__brand {
+    max-width: 50px;
+    padding: 15px;
+ }
+
+ .dc_chat__brand img {
+    max-width: 35px;
+ }
+
+ .dc_chat__head_texts {
+    padding: 0px 10px;
+ }
+ 
+ .dc_chat__head_text {
+    font-weight: bold;
+ }
+
+ .dc_chat__title {
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+ }
+ .dc_chat__head_desc,
+ .dc_chat__head_response_text {
+    margin: 0;
+    font-size: 15px;
+ }
+
+ .dc_chat_popup__button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 15px;
+    border-radius: 100%;
+ }
+
+ .dc_chat_popup__button img {
+    max-width: 30px;
+ }
+
+ .dc_chat__accounts_wrap {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+ }
+
+ .dc_account_link_tile {
+    display: flex;
+    background-color: #e2e2e2;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .dc_account_link_tile:hover {
+    box-shadow: 0px 0px 10px #888888;
+    transition: box-shadow 0.3s ease-in-out;
+ }
+
+ .dc_account_link_tile:hover::after {
+    opacity: 1;
+  }
+
+ .dc_chat__account_avatar img{
+    max-width: 35px;;
+ }
+
+ .dc_chat__account_avatar {
+    flex: 0.5;
+ }
+
+ .dc_chat__account_info {
+    flex: 2;
+    padding: 10px 15px;
+ }
+
+ .dc_chat__account_info p {
+    margin: 0;
+ }
+
+ .dc_chat__account_title {
+    font-weight: bold;
+ }
+
+ .dc_chat__account_position {
+    font-weight: 100;
+    font-size: 15px;
+ }
+
+ .dc_chat__accounts {
+    max-height: calc(100vh - 350px);
+    overflow-y: auto;
+ }
+
+ .dc_account_link_tile.offline
+ {
+    filter: brightness(85%);
+    cursor: default;
+    border-color: red;
+    pointer-events: none;
+ }
+
+ .dc_offline_tag {
+   display: none;
+ }
+
+ .dc_account_link_tile.offline .dc_offline_tag {
+   display: unset;
+   background: rgba( 255,0,0, 0.5 );
+   margin-left: 5px;
+   font-size: 10px;
+   padding: 5px;
+   border-radius: 3px;
+   color: #fff;
+   text-transform: uppercase;
+ }
+
+ @media only screen and (max-width: 460px) {
+   .dc_chat_popup {
+      right: 5px;
+      left: 5px;
+   }
+ }

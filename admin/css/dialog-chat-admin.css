@@ -1,0 +1,107 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ .hidden {
+    display: none;
+ }
+
+ input[type=text] {
+    width: 100%;
+ }
+
+ .dc_texts_icons_settings_wrap {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #888888;
+    margin-top: 2em;
+ }
+
+ .dc_settings_tabs {
+    flex: 1;
+    border: 1px solid #cec5c5;
+    border-radius: 10px 0 0 10px;
+ }
+
+ .dc_settings_playarea{
+    border: 1px solid #cec5c5;
+ }
+
+ #dc_whatsapp_account_number::after {
+   content: "Enter Text Here";
+ }
+
+ .dc_settings_tabs ul {
+    padding: 0;
+    margin: 0;
+ }
+
+ .dc_whatsapp_meta_time {
+   display: inline-grid;
+ }
+
+ .dc_whatsapp_meta_time label,
+ p.dc_always_online {
+   font-weight: bold;
+ }
+
+ .dc_settings_tabs ul li {
+    margin: 0;
+    padding: 1em;
+    border-bottom: 1px solid #cec5c5;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+ }
+
+ .dc_settings_tabs ul li.active {
+    background-color: #cec5c5;
+ }
+
+ .dc_settings_tabs ul li:hover {
+    cursor: pointer;
+ }
+
+ .dc_settings_tabs ul li img {
+    width: 2em;
+    padding: 0 10px;
+ }
+
+ .dc_settings_playarea {
+    flex: 4;
+    padding: 1em;
+ }
+
+ .dc_settings_playarea table {
+    width: 100%;
+    border-collapse: collapse;
+ }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.dc_separate_table {
+   border-top: 1px solid #cec5c5;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+.dc_admin_settings_size_input::after{
+    content: "px";
+    background: #c5c5c5;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.dialog-chat-list-avatar {
+   max-width: 50px;
+}
